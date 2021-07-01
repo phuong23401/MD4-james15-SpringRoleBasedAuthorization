@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>ACCESS DENIED</title>
+</head>
+<body>
+<center>
+    Dear <!--/*@thymesVar id="user" type="controller"*/-->
+    <strong th:text="${user}"></strong>, You are not authorized to access this page
+    <p><a th:href="@{/logout}">Logout</a></p>
+</center>
+</body>
+</html>
